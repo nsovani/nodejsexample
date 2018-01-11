@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 //var config=require('./config/default.js');
 console.log("env " + process.env.NODE_ENV);
 var _ = require("lodash");
-var config = require("./config/" + (process.env.NODE_ENV || "openshiftprd") + ".js");
+var config = require("./config/" + (process.env.NODE_ENV || "production") + ".js");
 console.log("db " + config.db.connectString);
 console.log("port " +config.server.port);
 module.exports = _.merge({}, config);
