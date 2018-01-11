@@ -1,0 +1,26 @@
+{
+  "name": "nodejsexample",
+  "version": "0.0.1",
+  "description": "nodejsexpressexample",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsovani/nodejsexample.git"
+  },
+  "author": "Niranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsovani/nodejsexample/issues"
+  },
+  "homepage": "https://github.com/nsovani/nodejsexample#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.9"
+  }
+}
