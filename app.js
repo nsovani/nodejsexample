@@ -2,11 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 //var config=require('./config/default.js');
-console.log(process.env.NODE_ENV);
+console.log("env " + process.env.NODE_ENV);
 var _ = require("lodash");
 var config = require("./config/" + (process.env.NODE_ENV || "openshiftprd") + ".js");
-console.log(config.db.connectString);
-console.log(config.server.port);
+console.log("db " + config.db.connectString);
+console.log("port " +config.server.port);
 module.exports = _.merge({}, config);
 
 
